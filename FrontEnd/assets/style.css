@@ -3,6 +3,14 @@
    License: none (public domain)
 */
 
+:root {/*
+    --first__title--color: #B1663C;
+    --slogan__color: #93532F;
+    --text__color: #3D3D3D;*/
+	--secondary__title--color: #1D6154;
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -184,5 +192,37 @@ footer nav ul {
 	display: flex;
 	justify-content: flex-end;
 	margin: 2em
+}
+
+.projets__lists {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.projet {
+    font-size: 16px;
+    border: 1px solid #1D6154;
+    border-radius: 60px;
+    padding: 9px;
+    min-width: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projet__link {
+    color: #1D6154;
+    font-weight: 700;
+	text-decoration: none;
+}
+
+.active .projet__link,
+.projet:hover .projet__link {
+    color: white;
+}
+
+.projet:hover {
+    background-color: #1D6154;
+    transition: 0.02s all;
 }
 
